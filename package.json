@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo 'building'"
+    "build": "echo 'building'",
+    "build:fab": "npm run build && npm run fab:build",
+    "fab:build": "fab build",
+    "fab:serve": "fab serve fab.zip"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/Aierie/aierie.github.io/issues"
   },
-  "homepage": "https://github.com/Aierie/aierie.github.io#readme"
+  "homepage": "https://github.com/Aierie/aierie.github.io#readme",
+  "devDependencies": {
+    "@fab/actions": "^1.0.0-rc.8.p1",
+    "@fab/cli": "^1.0.0-rc.8",
+    "@fab/input-static": "^1.0.0-rc.8",
+    "@fab/plugin-render-html": "^1.0.0-rc.8",
+    "@fab/plugin-rewire-assets": "^1.0.0-rc.8",
+    "@fab/server": "^1.0.0-rc.8"
+  }
 }
